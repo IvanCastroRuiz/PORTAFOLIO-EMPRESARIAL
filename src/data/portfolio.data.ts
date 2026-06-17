@@ -27,7 +27,7 @@ export const profile = {
   brandPhrase: "Soluciones legales, contables y tributarias para decisiones seguras.",
   location: "Colombia",
   whatsapp: "573043792371",
-  email: "soccgrupojc@gmail.com",
+  email: "milagros.castro.ruiz@gmail.com",
   linkedin: "https://www.linkedin.com/in/milagros-castro-ruiz-28bbba174/"
 };
 
