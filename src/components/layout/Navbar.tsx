@@ -11,7 +11,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-40 border-b border-white/10 bg-forest-950/90 shadow-[0_18px_60px_rgba(0,0,0,0.22)] backdrop-blur-xl">
+    <header className="fixed left-0 right-0 top-0 z-40 border-b border-white/10 bg-[linear-gradient(90deg,rgba(27,77,138,0.94)_0%,rgba(14,90,71,0.94)_56%,rgba(11,107,87,0.94)_100%)] shadow-[0_18px_60px_rgba(0,0,0,0.22)] backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 lg:px-8">
         <a href="#inicio" className="flex items-center gap-3" aria-label="Inicio">
           <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold-500/70 bg-gold-500 font-serifDisplay text-base font-bold text-forest-950 shadow-glow">
@@ -60,7 +60,7 @@ export function Navbar() {
       </nav>
 
       {open ? (
-        <div className="border-t border-white/10 bg-forest-950 px-5 py-5 shadow-2xl lg:hidden">
+        <div className="border-t border-white/10 bg-[linear-gradient(135deg,#1B4D8A_0%,#0E5A47_58%,#0B6B57_100%)] px-5 py-5 shadow-2xl lg:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-2">
             {siteNavigation.map((item) => (
               <a

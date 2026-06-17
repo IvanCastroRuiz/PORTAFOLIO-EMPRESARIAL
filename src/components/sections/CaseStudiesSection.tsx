@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
@@ -17,8 +16,8 @@ export function CaseStudiesSection() {
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           {caseStudies.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.08}>
-              <article className="group h-full overflow-hidden rounded-lg border border-forest-900/10 bg-ivory shadow-soft transition hover:-translate-y-1 hover:border-gold-500/45">
-                <div className="relative aspect-[4/3]">
+              <article className="group h-full overflow-hidden rounded-lg border border-forest-900/10 bg-ivory shadow-[0_24px_80px_rgba(14,90,71,0.18)] transition hover:-translate-y-1 hover:border-gold-500/45 hover:shadow-[0_30px_90px_rgba(27,77,138,0.2)]">
+                <div className="relative aspect-[4/3] shadow-[0_24px_70px_rgba(14,90,71,0.18)]">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -36,9 +35,6 @@ export function CaseStudiesSection() {
                     {item.title}
                   </h3>
                   <p className="mt-3 leading-7 text-graphite">{item.description}</p>
-                  <span className="mt-6 inline-flex items-center gap-2 rounded-full border border-forest-900/15 px-4 py-2 text-sm font-bold text-forest-900 transition group-hover:border-gold-500 group-hover:text-gold-500">
-                    Ver caso <ArrowRight size={16} />
-                  </span>
                 </div>
               </article>
             </Reveal>

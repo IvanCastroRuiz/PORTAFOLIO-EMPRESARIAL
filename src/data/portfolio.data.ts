@@ -26,19 +26,20 @@ export const profile = {
   specialties: "Especialista en Tributación y Derecho Administrativo",
   brandPhrase: "Soluciones legales, contables y tributarias para decisiones seguras.",
   location: "Colombia",
-  whatsapp: "573001234567",
-  email: "contacto@milagroscastro.com",
+  whatsapp: "573043792371",
+  email: "soccgrupojc@gmail.com",
   linkedin: "https://www.linkedin.com/in/milagros-castro-ruiz-28bbba174/"
 };
 
 export const referenceImages = {
   hero: "/images/imagenprincipal.png",
-  about: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80",
+  about: "/images/imagenoficina.png",
   legalOffice: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80",
   accounting: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80",
   caseOne: "/images/imagenconsultorias.png",
   caseTwo: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80",
   caseThree: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80",
+  caseFour: "/images/imagenreunionpng.png",
   contact: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=80"
 };
 
@@ -190,7 +191,7 @@ export const caseStudies = [
     category: "Empresarial",
     description:
       "Soporte integral para empresas que requieren orden legal, contable y documental.",
-    image: referenceImages.contact
+    image: referenceImages.caseFour
   }
 ];
 
