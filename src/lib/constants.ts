@@ -6,5 +6,4 @@ export const siteNavigation = [
   { label: "Contacto", href: "#contacto" }
 ];
 
-export const whatsappMessage =
-  "Hola, quiero recibir información sobre asesoría legal, contable o tributaria.";
+export const whatsappMessage = "Hola, quiero agendar una consulta.";

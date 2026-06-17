@@ -10,9 +10,13 @@ const config: Config = {
     extend: {
       colors: {
         forest: {
-          950: "#001F15",
-          900: "#002F1F",
-          800: "#003D2B"
+          950: "#0B3F33",
+          900: "#0E5A47",
+          800: "#0B6B57"
+        },
+        royal: {
+          700: "#1B4D8A",
+          600: "#214E97"
         },
         gold: {
           500: "#D4AF37",
@@ -28,8 +32,8 @@ const config: Config = {
         sansBody: ["var(--font-inter)"]
       },
       boxShadow: {
-        soft: "0 24px 80px rgba(0, 31, 21, 0.14)",
-        glow: "0 0 40px rgba(212, 175, 55, 0.16)"
+        soft: "0 24px 80px rgba(14, 90, 71, 0.18)",
+        glow: "0 0 40px rgba(212, 175, 55, 0.18)"
       }
     }
   },

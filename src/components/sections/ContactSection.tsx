@@ -6,25 +6,12 @@ import { profile, referenceImages } from "@/data/portfolio.data";
 import { whatsappMessage } from "@/lib/constants";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
-const contactReferenceImages = [
-  { src: referenceImages.legalOffice, title: "Referencia legal" },
-  { src: referenceImages.accounting, title: "Referencia contable" },
-  { src: referenceImages.caseThree, title: "Referencia tributaria" },
-  { src: referenceImages.about, title: "Referencia profesional" }
-];
-
 export function ContactSection() {
   return (
-    <section id="contacto" className="relative overflow-hidden bg-forest-950 px-5 py-24 text-white lg:px-8">
-      <Image
-        src={referenceImages.contact}
-        alt="Contacto profesional"
-        fill
-        sizes="100vw"
-        className="object-cover opacity-24"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-forest-950 via-forest-950/92 to-forest-950/75" />
-
+    <section
+      id="contacto"
+      className="relative overflow-hidden bg-[linear-gradient(105deg,#1B4D8A_0%,rgba(14,90,71,0.96)_50%,rgba(11,107,87,0.82)_100%)] px-5 py-24 text-white lg:px-8"
+    >
       <div className="relative z-10 mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
         <Reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-500">
@@ -45,7 +32,7 @@ export function ContactSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 text-white/86 transition hover:text-gold-500"
             >
-              <Phone size={19} className="text-gold-500" /> WhatsApp: {profile.whatsapp}
+              <Phone size={19} className="text-gold-500" /> WhatsApp: 3043792371
             </a>
             <a
               href={profile.linkedin}
@@ -71,7 +58,7 @@ export function ContactSection() {
               href={buildWhatsAppUrl(profile.whatsapp, whatsappMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-sm font-bold text-forest-950 transition hover:bg-gold-400"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-sm font-bold text-forest-950 transition hover:-translate-y-0.5 hover:bg-gold-400"
             >
               Escribir por WhatsApp <MessageCircle size={18} />
             </a>
@@ -85,30 +72,17 @@ export function ContactSection() {
         </Reveal>
 
         <Reveal delay={0.12}>
-          <div className="rounded-lg border border-gold-500/24 bg-white/10 p-4 shadow-glow backdrop-blur-xl md:p-6">
-            <div className="grid gap-4 sm:grid-cols-2">
-              {contactReferenceImages.map((item) => (
-                <div key={item.title} className="group overflow-hidden rounded-md border border-white/12 bg-forest-950/50">
-                  <div className="relative aspect-[4/3]">
-                    <Image
-                      src={item.src}
-                      alt={`${item.title} temporal`}
-                      fill
-                      sizes="(min-width: 768px) 25vw, 50vw"
-                      className="object-cover transition duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-forest-950/82 via-transparent to-transparent" />
-                    <p className="absolute bottom-4 left-4 right-4 text-sm font-bold uppercase tracking-[0.16em] text-gold-500">
-                      {item.title}
-                    </p>
-                  </div>
-                </div>
-              ))}
+          <div className="overflow-hidden rounded-lg border border-gold-500/24 bg-white p-4 shadow-[0_30px_90px_rgba(14,90,71,0.3),0_16px_60px_rgba(27,77,138,0.2)] md:p-6">
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-md">
+              <Image
+                src={referenceImages.caseFour}
+                alt="Consulta profesional"
+                fill
+                sizes="(min-width: 1024px) 48vw, 100vw"
+                className="object-cover transition duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-forest-950/64 via-transparent to-transparent" />
             </div>
-            <p className="mt-5 rounded-md border border-gold-500/20 bg-forest-950/60 p-4 text-sm leading-7 text-white/86">
-              Imágenes temporales de referencia. Cuando tengas las fotos finales,
-              las reemplazamos conservando el mismo diseño.
-            </p>
           </div>
         </Reveal>
       </div>

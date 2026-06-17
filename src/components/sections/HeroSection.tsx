@@ -14,7 +14,7 @@ export function HeroSection() {
       id="inicio"
       className="relative min-h-screen overflow-hidden bg-forest-950 px-5 pt-28 text-white lg:px-8"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_12%,rgba(212,175,55,0.16),transparent_28%),linear-gradient(135deg,#001F15_0%,#002F1F_52%,#003D2B_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_14%,rgba(212,175,55,0.16),transparent_27%),radial-gradient(circle_at_82%_8%,rgba(27,77,138,0.42),transparent_30%),linear-gradient(135deg,#1B4D8A_0%,#0E5A47_48%,#0B6B57_100%)]" />
       <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-ivory to-transparent" />
 
       <div className="relative z-10 mx-auto grid min-h-[calc(100vh-7rem)] max-w-7xl items-center gap-12 pb-20 lg:grid-cols-[1.05fr_0.95fr]">
