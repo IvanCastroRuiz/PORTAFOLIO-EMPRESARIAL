@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
-import { aboutHighlights, profile, referenceImages } from "@/data/portfolio.data";
+import { aboutHighlights, referenceImages } from "@/data/portfolio.data";
 
 export function AboutSection() {
   return (
@@ -18,13 +18,14 @@ export function AboutSection() {
               className="object-cover"
             />
           </div>
-          <div className="absolute -bottom-6 right-6 rounded-lg bg-forest-950 p-5 text-white shadow-glow">
-            <p className="text-xs uppercase tracking-[0.24em] text-gold-500">
-              Marca
-            </p>
-            <p className="mt-2 font-serifDisplay text-4xl text-gold-500">
-              {profile.initials}
-            </p>
+          <div className="absolute -bottom-6 right-6 h-20 w-40 overflow-hidden rounded-lg bg-forest-950 p-2 shadow-glow">
+            <Image
+              src="/images/logo-mcr-final.png"
+              alt="Milagros Castro Ruiz"
+              fill
+              sizes="160px"
+              className="object-contain"
+            />
           </div>
         </Reveal>
 
